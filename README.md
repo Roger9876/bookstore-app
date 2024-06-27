@@ -17,29 +17,24 @@ Follow these steps to set up the project on your local machine:
 
    ```bash
    git clone https://github.com/Roger9876/bookstore-app.git
-   ```
-
-2. **Navigate to the project directory:**
-
-   ```bash
    cd bookstore-app
    ```
 
-3. **Install server dependencies:**
+2. **Install server dependencies:**
 
    ```bash
    cd backend
    npm install
    ```
 
-4. **Install client dependencies:**
+3. **Install client dependencies:**
 
    ```bash
    cd ../frontend
    npm install
    ```
 
-5. **Set up environment variables:**
+4. **Set up environment variables:**
 
    Create a `.env` file in the `backend` directory and add the following:
 
@@ -48,7 +43,7 @@ Follow these steps to set up the project on your local machine:
    MONGODB_URI=your_mongodb_connection_string
    ```
 
-6. **Run the development server:**
+5. **Run the development server:**
 
    Open two terminal windows or tabs:
 
