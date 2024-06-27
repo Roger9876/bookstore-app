@@ -11,7 +11,7 @@ const ContactPage = () => {
 
   return (
     <>
-      <div className='max-h-screen max-w-screen-2xl container mx-auto md:px-20 px-4'>
+      <div className='min-h-screen max-w-screen-2xl container mx-auto md:px-20 px-4'>
         <div className='py-32 flex items-center justify-center'>
           <div className="text-left">
             <h3 className="font-bold text-2xl">Contact Us</h3>

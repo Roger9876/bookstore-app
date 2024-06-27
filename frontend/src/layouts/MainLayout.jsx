@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom"
+import { Toaster } from "react-hot-toast"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
@@ -9,7 +10,12 @@ const MainLayout = () => {
   const isSignupPage = location.pathname === '/signup';
 
   if (isSignupPage) {
-    return <Outlet />;
+    return (
+      <>
+        <Outlet />
+        <Toaster />
+      </>
+    );
   }
 
   return (
@@ -17,6 +23,7 @@ const MainLayout = () => {
       <Navbar />
       <Outlet />
       <Footer />
+      <Toaster />
     </>
   )
 }
