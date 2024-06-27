@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 const ContactPage = () => {
@@ -6,6 +7,10 @@ const ContactPage = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const onSubmit = (data) => console.log(data);
 
@@ -21,7 +26,7 @@ const ContactPage = () => {
                 <span>Name</span>
                 <br />
                 <input
-                  className="w-96 px-3 py-1 border rounded-md outline-none"
+                  className="w-96 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:border dark:text-white"
                   placeholder="Enter your full name"
                   type="text"
                   {...register("name", { required: true })} />
@@ -33,7 +38,7 @@ const ContactPage = () => {
                 <span>Email</span>
                 <br />
                 <input
-                  className="w-96 px-3 py-1 border rounded-md outline-none"
+                  className="w-96 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:border dark:text-white"
                   placeholder="Enter your email"
                   type="email"
                   {...register("email", { required: true })} />
@@ -45,7 +50,7 @@ const ContactPage = () => {
                 <span>Message</span>
                 <br />
                 <textarea maxLength={500}
-                  className="w-96 h-40 px-3 py-1 border rounded-md outline-none"
+                  className="w-96 h-40 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:border dark:text-white"
                   placeholder="Type your message here"
                   {...register("message", { required: true })} />
                 <br />

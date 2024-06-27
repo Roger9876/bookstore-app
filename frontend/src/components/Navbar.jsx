@@ -46,7 +46,7 @@ const Navbar = () => {
   const navItems = (
     <>
       <li><Link to={'/'}>Home</Link></li>
-      <li><Link to={'/course'}>Course</Link></li>
+      <li><Link to={'/explore'}>Explore</Link></li>
       <li><Link to={'/about'}>About</Link></li>
       <li><Link to={'/contact'}>Contact</Link></li>
     </>
@@ -88,7 +88,7 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <label className="px-3 py-2 border rounded-md flex items-center gap-2">
-                <input type="text" className="grow outline-none dark:bg-slate-900 dark:text-white" placeholder="Search" />
+                <input type="text" className="grow outline-none dark:bg-slate-800 dark:text-white" placeholder="Search" />
                 <svg
                   className="w-4 h-4 opacity-70"
                   fill="currentColor"
